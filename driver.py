@@ -1,11 +1,3 @@
-##############################################################################
-#
-# File:         driver.py
-# Date:         Tue 11 Sep 2018  11:33
-# Author:       Ken Basye
-# Description:  Driver for testing bloxorz algorithms
-#
-##############################################################################
 
 """
 Driver for testing bloxorz algorithms
