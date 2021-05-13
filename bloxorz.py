@@ -1,12 +1,4 @@
-##############################################################################
-#
-# File:         bloxorz.py
-# Date:         Wed 31 Aug 2011  11:40
-# Author:       Ken Basye
-# Description:  Bloxorz utilities
-#
-##############################################################################
- 
+
  
 """
 Classes and functions for the Bloxorz project
