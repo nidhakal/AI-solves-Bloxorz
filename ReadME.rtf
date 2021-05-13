@@ -1,0 +1,39 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Name: Nipurna Dhakal \
+Read Me\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 At the second part of part 2 you should be able to add some code that builds a Searcher (from searchGeneric) and try it out. Q1) Why doesn't it work?\
+As the given code in the searcher is doing a Depth First Search which gets stuck in an infinite loop and never gets completed. So using unbounded code \
+will not work for Searcher (from searchGeneric).\
+\
+Can you solve your board from above? Q3) What about the boards in\'a0{\field{\*\fldinst{HYPERLINK "https://mathcs.clarku.edu/~cs210/project1_code/boards.zip"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 boards.zip}}?\
+As python pops the list from the back of the list, it is unable to perform a BFS. So we need to pop the first element of the list using pop(0). \
+And even after implementing BFS our algorithm will not be able to solve all the list  as some of the boards have an extremely time consuming solution (as it depends on the\
+cost and gets stuck). \outl0\strokewidth0 As BFS goes through each and every element of the graph, we will be able to to find the solution if the board has one\outl0\strokewidth0  but some dont even have a solution. \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 What happens when you use A-Star with a heuristic function that always returns 0?\
+Returing 0 in a A-Star heurestic function takes a longer time as it explores the same nodes multiple ties and branches out to surrounding nodes depending on their distance from position. \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+LayOut:\
+Used PyCharm to code the program as I was not being able to mount colab to google drive. \
+to implement next position I checked the output in the doctest section and compared the tuple values(pos[0],pos[1] etc) in my code and connected it with the appropriate action. \
+For neighbors i checked is the next position(relative to its action) is a legal board position and added the surrounding legal position to a list. \
+Moving on as python pops the last element of the list to implement BFS we had to change it so we could remove the 1st element, we used pop(0) to do this.  \
+to do the bFS runing we added the class BFSPruing and performed pruning until the frontier is empty. The A-Star implementation and AStarMultiPruneSearcher can be found in Search generic.  \
+For heuristic I implemented Manhattan distance. The driver file goes through \outl0\strokewidth0 BFSPruing, A-Star and AStarMultiPruneSearcher to give us the appropriate result. \
+\outl0\strokewidth0 \
+\
+\
+}
